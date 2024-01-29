@@ -39,3 +39,35 @@ func identifier() return_type{
 }
 
 NOTE: We can call functions in one file from another file in the SAME package. However, we will have to build the two files with `go build` command first.
+
+There are 2(?) of builtin sequential data structures in golang:
+->slice >can be shrinked/expanded like lists in python (but all elements has to be of same type)
+cars := []string{"bugatti", "lamborghini", "ferrari"}
+
+can append to slice using append(slice_name, item_to_be_appended)
+cars = append(cars, "tesla")
+
+->array >static. cannot be shrinked/expanded once the size is defined.
+three methods:
+
+var arr [3]int = [3]int{1,2,3}
+
+arr := [...]int{1,2,3,4}
+
+looping in go:
+
+for i := 0; i<10; i++{
+    //statements
+}
+
+if you want to loop through a slice:
+
+for i, car := range cars{ //here i will be the index number and car will be the actual element
+    //statements
+}
+
+OR
+
+for i := 0; i<len(car); i++{
+    fmt.Println(car[i])
+}
