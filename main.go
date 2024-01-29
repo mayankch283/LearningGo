@@ -3,5 +3,12 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello world!")
+	card := newCard()
+	fmt.Println(card)
+	cray()
+
+}
+
+func newCard() string {
+	return "5 of Diamonds"
 }

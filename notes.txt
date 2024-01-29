@@ -24,3 +24,18 @@ A. Because then it wouldn't be an executable package but a reusable package.
 Q. what is `import "fmt"`?
 A. fmt is another package for formatted I/O. It's a part of the standard library of Go. Basically, imports all functionality of fmt to our main package.
 
+
+2 ways to initialize a variable:
+-> `var identifier data_type = value`
+-> `identifier := value` // this is not dynamic. this as well is done at compile time.
+
+NOTE: You can declare a variable outside of all funcs but can't initialize it using :=
+
+
+declaring a function:
+func identifier() return_type{
+    //body
+    return value_of_return_type
+}
+
+NOTE: We can call functions in one file from another file in the SAME package. However, we will have to build the two files with `go build` command first.
