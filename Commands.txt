@@ -1,0 +1,26 @@
+go cli
+
+go build -> compiles bunch of go source code files
+go run -> compiles and executes one or two files
+go fmt -> formats all code in each file in the current directory
+go install -> compiles and "installs" a package
+go get -> downloads raw source code of someone else's package
+go test -> runs any tests associated with the project
+
+Package in go is a collection of .go files
+
+package == project == workspace
+
+There are 2 types of packages in golang:
+Executable package : generates a file that we can run. Executable packages must have a func main().
+Reusable package : code used as 'helpers'/libraries/code dependencies. good place to put reusable logic here.
+
+Q. How do we create an executable package and reusable package?
+A. We declare "package main" when we want to make sure that building the file spits out an executable. 
+
+Q. Then why we declare "package main" and not something like "package folder_name"?
+A. Because then it wouldn't be an executable package but a reusable package.
+
+Q. what is `import "fmt"`?
+A. fmt is another package for formatted I/O. It's a part of the standard library of Go. Basically, imports all functionality of fmt to our main package.
+
