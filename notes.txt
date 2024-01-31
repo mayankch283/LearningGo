@@ -40,7 +40,7 @@ func identifier() return_type{
 
 NOTE: We can call functions in one file from another file in the SAME package. However, we will have to build the two files with `go build` command first.
 
-There are 2(?) of builtin sequential data structures in golang:
+There are 2(?) builtin sequential data structures in golang:
 ->slice >can be shrinked/expanded like lists in python (but all elements has to be of same type)
 cars := []string{"bugatti", "lamborghini", "ferrari"}
 

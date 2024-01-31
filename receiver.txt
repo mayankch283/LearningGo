@@ -1,0 +1,26 @@
+type:
+create a custom type using base types like int, string, slices, etc
+in Object oriented terminology, using type we can "inherit" all properties of the base type.
+
+ex:
+type deck []string
+
+here deck can be used as slice of strings.
+
+so for example, arr := []string{} is equivalent to arr := deck{}
+
+or if it was `type deck int` then a := 45
+
+
+-------
+
+Receiver:
+sets up methods on variables that we create
+
+func (reference_variable type_name) function_name(){
+    //body(includes interaction with reference_variable)
+}
+
+here reference_variable works similar to python's self keyword
+
+NOTE: by convention, the reference_variable is named as first(or first two) letters of the type_name of the receiver
