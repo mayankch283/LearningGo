@@ -71,3 +71,11 @@ OR
 for i := 0; i<len(car); i++{
     fmt.Println(car[i])
 }
+
+---------
+
+Writing/Reading from file
+
+package used: ioutil
+
+func WriteFile()(filename string, data []byte, perm os.FileMode) error
