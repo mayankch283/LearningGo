@@ -8,6 +8,8 @@ go get -> downloads raw source code of someone else's package
 go test -> runs any tests associated with the project
 
 Package in go is a collection of .go files
+A module in Go is a collection of related Go packages that are versioned and shared together.
+Modules are the basic unit of code sharing and dependency management in Go.
 
 package == project == workspace
 
