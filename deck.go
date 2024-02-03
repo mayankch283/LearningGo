@@ -13,7 +13,7 @@ func newDeck() deck {
 	cards := []string{}
 
 	cardSuites := []string{"Spades", "Diamonds", "Hearts", "Club"}
-	cardValues := []string{"Ace", "One", "Two", "Three", "Four"} //Enough elements to test. Should eventually go up to King.
+	cardValues := []string{"Ace", "Two", "Three", "Four"} //Enough elements to test. Should eventually go up to King.
 
 	for _, cardSuite := range cardSuites {
 		for _, cardValue := range cardValues {
@@ -40,8 +40,8 @@ func (d deck) toString() string {
 
 }
 
-func (d deck) saveToFile() error {
-	return os.WriteFile("cards", []byte(d.toString()), 0666)
+func (d deck) saveToFile(filename string) error {
+	return os.WriteFile(filename, []byte(d.toString()), 0666)
 }
 
 func newDeckFromFile(filename string) deck {
